@@ -1,0 +1,321 @@
+﻿<Window x:Name="MainWindow1" x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AdvVBChess"
+        mc:Ignorable="d"
+        Title="Advanced Visual Basic: Chess" Height="515" Width="640" MinWidth="640" MinHeight="515">
+    <Grid x:Name="MainGrid">
+        <Grid.Resources>
+
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="btnAbout" Content="About" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="487,445,0,0" Height="20"/>
+        <Button x:Name="btnNewGame" Content="New Game" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="487,30,0,0" Height="20"/>
+        <Button x:Name="btnLoadGame" Content="Load Game" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="487,80,0,0" Height="20"/>
+        <Button x:Name="btnSaveGame" Content="Save Game" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="487,55,0,0"/>
+        <Button x:Name="btnA1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="35,30,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowFrameColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnB1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="90,30,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnC1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="145,30,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowFrameColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnD1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="200,30,0,0" Height="50"/>
+        <Button x:Name="btnE1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="255,30,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowFrameColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnF1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="310,30,0,0" Height="50"/>
+        <Button x:Name="btnG1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="365,30,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowFrameColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnH1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="420,30,0,0" Height="50"/>
+        <Button x:Name="btnA2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="35,85,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnB2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="90,85,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkDarkColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnC2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="145,85,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnD2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="200,85,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkDarkColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnE2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="255,85,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnF2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="310,85,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkDarkColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnG2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="365,85,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnH2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="420,85,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkDarkColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnA3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="35,140,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowFrameColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnB3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="90,140,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnC3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="145,140,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowFrameColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnD3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="200,140,0,0" Height="50"/>
+        <Button x:Name="btnE3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="255,140,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowFrameColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnF3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="310,140,0,0" Height="50"/>
+        <Button x:Name="btnG3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="365,140,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowFrameColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnH3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="420,140,0,0" Height="50"/>
+        <Button x:Name="btnA4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="35,195,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnB4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="90,195,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkDarkColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnC4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="145,195,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnD4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="200,195,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkDarkColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnE4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="255,195,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnF4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="310,195,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkDarkColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnG4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="365,195,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnH4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="420,195,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkDarkColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnA5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="35,250,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowFrameColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnB5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="90,250,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnC5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="145,250,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkDarkColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnD5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="200,250,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnE5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="255,250,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowFrameColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnF5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="310,250,0,0" Height="50"/>
+        <Button x:Name="btnG5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="365,250,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowFrameColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnH5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="420,250,0,0" Height="50"/>
+        <Button x:Name="btnA6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="35,305,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnB6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="90,305,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkDarkColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnC6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="145,305,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnD6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="200,305,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkDarkColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnE6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="255,305,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnF6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="310,305,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkDarkColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnG6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="365,305,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnH6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="420,305,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkDarkColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnA7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="35,360,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowFrameColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnB7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="90,360,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnC7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="145,360,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowFrameColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnD7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="200,360,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnE7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="255,360,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowFrameColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnF7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="310,360,0,0" Height="50"/>
+        <Button x:Name="btnG7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="365,360,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowFrameColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnH7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="420,360,0,0" Height="50"/>
+        <Button x:Name="btnA8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="35,415,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnB8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="90,415,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkDarkColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnC8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="145,415,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnD8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="200,415,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkDarkColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnE8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="255,415,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnF8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="310,415,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkDarkColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnG8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="365,415,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlLightColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnH8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="420,415,0,0" Height="50">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkDarkColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Label Content="A" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="51,4,0,0"/>
+        <Label Content="B" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="106,4,0,0"/>
+        <Label Content="C" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="162,4,0,0"/>
+        <Label Content="D" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="216,4,0,0"/>
+        <Label Content="E" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="272,4,0,0"/>
+        <Label Content="F" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="327,4,0,0"/>
+        <Label Content="G" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="381,4,0,0"/>
+        <Label Content="H" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="436,4,0,0"/>
+        <Label Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,42,0,0"/>
+        <Label Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,372,0,0"/>
+        <Label Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,317,0,0"/>
+        <Label Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,262,0,0"/>
+        <Label Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,207,0,0"/>
+        <Label Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,152,0,0"/>
+        <Label Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,97,0,0"/>
+        <Label Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,427,0,0"/>
+        <TextBox x:Name="txtStatus" HorizontalAlignment="Left" Height="115" TextWrapping="Wrap" Text="Start a new game or load a previous one from a save file!" VerticalAlignment="Top" Width="120" Margin="487,128,0,0"/>
+        <TextBox x:Name="txtGameMsg" HorizontalAlignment="Left" Height="133" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="487,250,0,0" FontWeight="Bold"/>
+
+
+    </Grid>
+</Window>

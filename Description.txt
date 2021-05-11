@@ -1,0 +1,14 @@
+﻿Advanced Visual Basic Chess follows the typical rules of the classic board game. 
+The goal is to capture the King piece of the opposing team. Each team is given the 
+same set of beginning pieces, each type having its own set of rules regarding 
+movement. A more complete summary of the rules for Chess can be found at this URL 
+(https://www.chess.com/learn-how-to-play-chess).
+  The application itself organizes the pieces, squares, and game board in discrete 
+data types that often utilize each other. The Piece class is the base class used for 
+all pieces with each type having a subclass (Pawn, Bishop, Knight, Rook, Queen, and 
+King). Each piece contains some information about the piece like its movement 
+abilities, position on the board, and color. A class for each square on the board 
+was created to simplify the communication of information about each item on the grid. 
+Many of the possible moves for each piece are stored in an array of linked lists of 
+Squares, each element containing a list of each progressive move that could be made 
+on a given path.

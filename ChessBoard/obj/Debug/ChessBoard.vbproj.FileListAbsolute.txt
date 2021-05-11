@@ -1,0 +1,10 @@
+C:\Users\Zack\Google Drive\School\Adv. VB\AdvVBChess\ChessBoard\bin\Debug\ChessBoard.dll
+C:\Users\Zack\Google Drive\School\Adv. VB\AdvVBChess\ChessBoard\bin\Debug\ChessBoard.pdb
+C:\Users\Zack\Google Drive\School\Adv. VB\AdvVBChess\ChessBoard\bin\Debug\ChessBoard.xml
+C:\Users\Zack\Google Drive\School\Adv. VB\AdvVBChess\ChessBoard\obj\Debug\ChessBoard.vbprojAssemblyReference.cache
+C:\Users\Zack\Google Drive\School\Adv. VB\AdvVBChess\ChessBoard\obj\Debug\ChessBoard.Resources.resources
+C:\Users\Zack\Google Drive\School\Adv. VB\AdvVBChess\ChessBoard\obj\Debug\ChessBoard.vbproj.GenerateResource.cache
+C:\Users\Zack\Google Drive\School\Adv. VB\AdvVBChess\ChessBoard\obj\Debug\ChessBoard.vbproj.CoreCompileInputs.cache
+C:\Users\Zack\Google Drive\School\Adv. VB\AdvVBChess\ChessBoard\obj\Debug\ChessBoard.dll
+C:\Users\Zack\Google Drive\School\Adv. VB\AdvVBChess\ChessBoard\obj\Debug\ChessBoard.xml
+C:\Users\Zack\Google Drive\School\Adv. VB\AdvVBChess\ChessBoard\obj\Debug\ChessBoard.pdb
